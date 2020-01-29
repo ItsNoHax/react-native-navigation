@@ -19,6 +19,7 @@ module.exports = {
   Stack: 'Stack',
   SetRoot: 'SetRoot',
   Overlay: 'Overlay',
+  InvisibleOverlay: 'InvisibleOverlay',
   OverlayAlert: 'OverlayAlert',
   ScrollViewOverlay: 'ScrollViewOverlay',
   Lifecycle: 'Lifecycle',

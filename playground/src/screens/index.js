@@ -29,6 +29,7 @@ function registerScreens() {
   Navigation.registerComponent(Screens.Orientation, () => require('./OrientationScreen'));
   Navigation.registerComponent(Screens.OrientationDetect, () => require('./OrientationDetectScreen'));
   Navigation.registerComponent(Screens.Overlay, () => require('./OverlayScreen'));
+  Navigation.registerComponent(Screens.InvisibleOverlay, () => require('./InvisibleOverlayScreen'));
   Navigation.registerComponent(Screens.OverlayAlert, () => require('./OverlayAlert'));
   Navigation.registerComponent(Screens.Pushed, () => require('./PushedScreen'));
   Navigation.registerComponent(Screens.ScrollViewOverlay, () => require('./ScrollViewOverlay'));
