@@ -21,7 +21,10 @@ class NavigationScreen extends React.Component {
       topBar: {
         title: {
           text: 'Navigation'
-        }
+        },
+        background: {
+          color: 'red',
+        },
       },
       bottomTab: {
         text: 'Navigation',

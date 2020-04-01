@@ -19,9 +19,21 @@ class LayoutsScreen extends React.Component {
         testID: WELCOME_SCREEN_HEADER,
         title: {
           text: 'React Native Navigation'
+        },
+        background: {
+          color: 'red',
         }
       }
     };
+  }
+
+  onPressMerge = () => {
+    Navigation.mergeOptions('bottomTabs', {
+      bottomTabs: {
+        currentTabIndex: 2,
+      },
+    });
+    Navigation.push('navigationStack', Screens.FlatListScreen)
   }
 
   render() {
@@ -30,9 +42,11 @@ class LayoutsScreen extends React.Component {
         <Button label='Stack' testID={STACK_BTN} onPress={this.stack} />
         <Button label='BottomTabs' testID={BOTTOM_TABS_BTN} onPress={this.bottomTabs} />
         <Button label='SideMenu' testID={SIDE_MENU_BTN} onPress={this.sideMenu} />
+        <Button label='Update merge options and push' onPress={this.onPressMerge} />
       </Root>
     );
   }
+
 
   stack = () => Navigation.showModal(Screens.Stack);
 

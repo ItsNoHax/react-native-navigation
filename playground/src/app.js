@@ -30,6 +30,7 @@ function setRoot() {
   Navigation.setRoot({
     root: {
       bottomTabs: {
+        id: 'bottomTabs',
         children: [
           {
             stack: {
@@ -76,6 +77,7 @@ function setRoot() {
           },
           {
             stack: {
+              id: 'navigationStack',
               children: [
                 {
                   component: {
